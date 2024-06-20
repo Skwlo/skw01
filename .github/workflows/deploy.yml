@@ -27,12 +27,12 @@ jobs:
       - name: Prepare the docker-compose run
         run: |
           ls -l
-          ls -l my-website
+          ls -l my-web
         
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: ./my-website
+          context: ./my-web
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/234-deploylab-frontend:latest
           
