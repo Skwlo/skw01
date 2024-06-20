@@ -34,7 +34,7 @@ jobs:
         with:
           context: ./my-web
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/my-web:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/234-deploylab-frontend:latest
           
       - name: Copy file via ssh password
         uses: appleboy/scp-action@v0.1.4
