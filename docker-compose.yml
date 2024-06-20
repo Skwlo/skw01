@@ -1,0 +1,6 @@
+version: '3.3'
+services:
+  my-web:
+    image: 1950580563480/my-web:latest
+    ports:
+      - "80:80"
